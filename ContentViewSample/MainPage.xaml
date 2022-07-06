@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContentViewSample.MainPage">
+
+        <VerticalStackLayout Spacing="10">
+        <Button Text="Increase Content View Size" Clicked="Button_Clicked"/>
+        <ContentView  x:Name="contentView" BackgroundColor="LightGray" SizeChanged="contentView_SizeChanged"  HeightRequest="200" WidthRequest="200">
+           <VerticalStackLayout  x:Name="vLayout">
+              <Image Source="dotnet_bot.png" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </ContentView>
+       </VerticalStackLayout>
+
+</ContentPage>
